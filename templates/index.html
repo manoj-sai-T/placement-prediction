@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Prediction</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Placement Prediction</h1>
+        <form id="prediction-form">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="0">Female</option>
+                <option value="1">Male</option>
+            </select><br>
+            <label for="ssc_p">SSC Percentage:</label>
+            <input type="text" id="ssc_p" name="ssc_p"><br>
+            <label for="ssc_b">SSC Board:</label>
+            <select id="ssc_b" name="ssc_b">
+                <option value="0">Others</option>
+                <option value="1">Central</option>
+            </select><br>
+            <label for="hsc_p">HSC Percentage:</label>
+            <input type="text" id="hsc_p" name="hsc_p"><br>
+            <label for="hsc_b">HSC Board:</label>
+            <select id="hsc_b" name="hsc_b">
+                <option value="0">Others</option>
+                <option value="1">Central</option>
+            </select><br>
+            <label for="hsc_s">HSC Specialization:</label>
+            <select id="hsc_s" name="hsc_s">
+                <option value="0">Commerce</option>
+                <option value="1">Science</option>
+                <option value="2">Arts</option>
+            </select><br>
+            <label for="degree_p">Degree Percentage:</label>
+            <input type="text" id="degree_p" name="degree_p"><br>
+            <label for="degree_t">Degree Field:</label>
+            <select id="degree_t" name="degree_t">
+                <option value="0">Sci&Tech</option>
+                <option value="1">Comm&Mgmt</option>
+                <option value="2">Others</option>
+            </select><br>
+            <label for="workex">Work Experience:</label>
+            <select id="workex" name="workex">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select><br>
+            <label for="etest_p">Employability Test Percentage:</label>
+            <input type="text" id="etest_p" name="etest_p"><br>
+            <label for="specialisation">MBA Specialization:</label>
+            <select id="specialisation" name="specialisation">
+                <option value="0">Mkt&HR</option>
+                <option value="1">Mkt&Fin</option>
+            </select><br>
+            <label for="mba_p">MBA Percentage:</label>
+            <input type="text" id="mba_p" name="mba_p"><br>
+            <button type="button" id="predict-btn">Predict Placement</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
